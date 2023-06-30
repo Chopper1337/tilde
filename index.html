@@ -37,7 +37,7 @@
     commandPathDelimiter: '/',
     commandSearchDelimiter: ' ',
     defaultSearchTemplate: 'https://startpage.com/sp/search?query={}',
-    openLinksInNewTab: true,
+    openLinksInNewTab: false,
     suggestionLimit: 4,
   };
 
@@ -86,6 +86,19 @@
           's/transmission/web/',
         ],
         url: 'https://server.chopperhook.xyz/',
+      },
+    ],
+    [
+      't',
+      {
+        name: 'Torrents',
+        suggestions: [
+          'https://www.torrentleech.org',
+          'https://rutracker.org',
+          'https://losslessclub.com',
+          'https://nyaa.si',
+          'https://btdig.com/',
+        ],
       },
     ],
     [
@@ -564,6 +577,7 @@
     font-family: var(--font-family);
     font-size: var(--font-size-base);
     line-height: var(--line-height-base);
+    background-image: url('https://www.startpage.com/sp/cdn/images/startpage-night.jpg');
   }
 
   body {
